@@ -1,0 +1,36 @@
+/* NavBar.module.css */
+.contenedor{
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+}
+
+.barraNavegacion{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos para el enlace activo */
+.activeLink {
+    /* Estilos para el enlace activo aquí */
+    color: rgb(165, 42, 42);
+    background-color: #ffffff;
+    padding: 5px 10px;
+    font-weight:bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  /* Estilos para el enlace inactivo */
+.inactiveLink {
+    /* Estilos para el enlace inactivo aquí */
+    color: #ffffff;
+    
+  }
+  

@@ -1,0 +1,48 @@
+/*Display Grid de la pantall*/
+.barraNavegacion{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    gap: 10px; /* Espacio entre las celdas */
+}
+
+@media (max-width: 700px) {
+    .barraNavegacion {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+  }
+  
+/*Posicionamiento del texto con respecto a la imagen*/
+.links{
+    position: relative; 
+}
+.titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    /*Formato de la fuente*/
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    color: black;    
+    transition: color 0.3s ease;
+}
+
+/*Borde de las imagen*/
+.imagenes {
+    border: 1px solid black;
+    transition: border 0.3s ease;
+}
+.contenedor:hover .imagenes{
+    border: 2px solid blue ;
+}
+.contenedor:hover .titulo{
+    color: blue ;
+}

@@ -1,0 +1,17 @@
+/* NavBar.module.css */
+.contenedor{
+  height:75px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor p{
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+  
