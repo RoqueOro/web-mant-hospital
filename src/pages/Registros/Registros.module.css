@@ -33,6 +33,7 @@
     padding: 10px 0px;
     color: black;    
     transition: color 0.3s ease;
+    margin: 0px;
 }
 
 /*Borde de las imagen*/
@@ -45,4 +46,11 @@
 }
 .contenedor:hover .titulo{
     color: blue ;
+}
+
+p{
+    text-align: justify;
+    font-size: medium;
+    font-style: oblique;
+    margin: 0px 10px 10px 10px;
 }

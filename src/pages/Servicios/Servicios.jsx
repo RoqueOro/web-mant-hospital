@@ -4,7 +4,7 @@ const Servicios = () => {
   
     return(
     <div>
-        <h1>Nuestros servicios</h1>
+        <h1>Mantenimiento Preventivo</h1>
         <nav>
             <Link to="/servicios">Inicio</Link>
             <Link to="/servicios/lista">Lista</Link>

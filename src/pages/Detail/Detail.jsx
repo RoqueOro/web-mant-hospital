@@ -13,10 +13,9 @@ const Detail = ({ productos }) => {
 
     return(
     <div>
-        <h1>Detalle del producto</h1>
-        <h2>nombre: {producto.nombre}</h2>
-        <h3>${producto.precio}</h3>     
-        <h4>id:{producto.id}</h4>
+        <h2>{producto.nombre}</h2> 
+        <p>Estos son nuestro productos y servicios que vamos a ofrecer</p>
+        <h3>{producto.id}</h3>
         <button onClick={handleGoBack}> Regresar </button>     
     </div>        
     )
