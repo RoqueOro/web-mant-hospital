@@ -1,0 +1,36 @@
+/* NavBar.module.css */
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: brown;
+  height: 50px;
+}
+
+.contenedor p {
+  margin: 0px 20px 0px 20px;
+  font-size: 13px;
+  color:#ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*Formato de pantalla 768px*/  
+@media (max-width: 768px) {
+  .contenedor{
+    display: flex;  
+    flex-direction: column;
+    height: 75px;
+    justify-content: center;
+  }
+  .contenedor p{
+    margin: 5px;
+  }
+}
+
+/*Formato de pantalla 1280px*/  
+@media (max-width: 1280px) {
+  .contenedor{
+    justify-content: center;
+  }
+}

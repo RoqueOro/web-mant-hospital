@@ -1,8 +1,6 @@
 
 #root {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -40,22 +38,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-/*Mi codigo*/
-
-.zocaloSuperior {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: brown;
-  height: 50px;
-}
-
-h4 {
-  flex-grow: 1;
-  margin: 0;
-  font-size: 80%;
-  color:#ffffff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -1,18 +1,18 @@
-import "./App.css"
+//import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import NavBar from './components/Nav/NavBar';
 import About from './pages/About/About';
 import Products from './pages/Products/Product';
 import Contact from './pages/Contact/Contact';
 import Error404 from "./pages/Error404/Error404";
 import Detail from "./pages/Detail/Detail";
-/*Servicios*/ 
-import Servicios from "./pages/Servicios/Servicios";
-import ServiciosHome from "./pages/Servicios/ServiciosHome";
-import ServiciosLista from "./pages/Servicios/ServiciosLista";
-import ServiciosGarantia from "./pages/Servicios/ServiciosGarantia";
-import ServiciosPoliticas from "./pages/Servicios/ServiciosPoliticas";
+/*Mantenimiento Preventivo*/ 
+import Servicios from "./pages/Mantenimiento-Preventivo/Servicios";
+import ServiciosHome from "./pages/Mantenimiento-Preventivo/ServiciosHome";
+import ServiciosLista from "./pages/Mantenimiento-Preventivo/ServiciosLista";
+import ServiciosGarantia from "./pages/Mantenimiento-Preventivo/ServiciosGarantia";
+import ServiciosPoliticas from "./pages/Mantenimiento-Preventivo/ServiciosPoliticas";
 
 import { useState } from "react";
 /*Registros*/
@@ -43,12 +43,8 @@ function App() {
     
   return (
     <div>
-      <div className="zocaloSuperior">
-        <h4> Contacto: clinica@serv.mantenimiento.com.ar </h4>
-        <h4> Emergencias: 54-9-261-3542741 / 54-9-261-98752461 </h4>
-      </div>
+  
       <BrowserRouter>
-          <Header />
           <NavBar />
         <Routes>
           <Route path="/about" element={<About />} />
@@ -69,6 +65,8 @@ function App() {
           <Route path="*"  element={<Error404 />} />
         </Routes>      
       </BrowserRouter>
+
+      <Footer />
     </div>
   )
 }
